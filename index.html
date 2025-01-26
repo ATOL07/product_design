@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            .carousel-item img {
+                height: 450px;
+                object-fit: scale-down;
+            }
+        </style>
 </head>
 <body>
     
@@ -35,6 +42,59 @@
         </nav>
     </header>
 
+    <!-- Header -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Column 1: Product Image -->
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/cam1.png" class="d-block w-100" alt="Cam1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/cam2.png" class="d-block w-100" alt="Cam2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/cam3.png" class="d-block w-100" alt="Cam3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Column 2: Product Description -->
+            <div class="col-md-6">
+                <h1>Smart Home Security Camera</h1>
+                <p class="lead">Advanced protection for your home and peace of mind</p>
+
+                <div class="my-4">
+                    <h3 class="text-primary">$199.99</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                </div>
+
+                <div>
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>4K Ultra HD Video Resolution</li>
+                        <li>180-Degree Wide-Angle Lens</li>
+                        <li>Night Vision up to 30 Feet</li>
+                        <li>AI-Powered Motion Detection</li>
+                        <li>Cloud and Local Storage Options</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
